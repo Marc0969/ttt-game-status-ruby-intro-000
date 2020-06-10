@@ -23,7 +23,7 @@ def won?(board)
       false
     else
       WIN_COMBINATIONS.each do |win_index|
-       if board(win_index[0],[1],[2] == (board(win_index["X","X","X"])) || (board(win_index["O","O","O"]))
+       if board(win_index[0],[1],[2]) == (board(win_index["X","X","X"])) || (board(win_index["O","O","O"]))
          won?(board) == (win_index[0],[1],[2])
 end
 end
